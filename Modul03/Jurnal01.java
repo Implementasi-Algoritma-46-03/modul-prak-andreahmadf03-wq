@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//edit
 public class Jurnal01 {
 
     public static void main(final String[] args) {
@@ -7,7 +7,7 @@ public class Jurnal01 {
 
         int jumlahuang  =  sc.nextInt();
         int lembar1000 =  jumlahuang / 1000;
-        int sisa = jumlahuang % 1000;
+        int sisa = jumlahuang % 1000;     
 
         System.out.println(lembar1000);
         System.out.println(sisa);

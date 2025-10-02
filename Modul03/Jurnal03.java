@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Jurnal03 {
-
+//edit
     public static void main(final String[] args) {
         Scanner input = new Scanner(System.in);
          

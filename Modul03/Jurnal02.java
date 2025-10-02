@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//edit
 public class Jurnal02 {
 
     public static void main(final String[] args) {
@@ -12,7 +12,7 @@ public class Jurnal02 {
         double rataRata = (a + b + c)/3.0;
 
         System.out.printf("%.2f", rataRata);
-        
+
 
     }
 }
