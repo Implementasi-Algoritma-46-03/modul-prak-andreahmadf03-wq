@@ -7,11 +7,9 @@ public class TP03 {
         Scanner input = new Scanner(System.in);
 
         int Jumlah_permen;
-        System.out.print("Masukkan Jumlah permen: ");
         Jumlah_permen = input.nextInt();
 
         int Jumlah_teman;
-        System.out.print("Masukkan Jumlah teman: ");
         Jumlah_teman = input.nextInt();
 
         int permen_perteman = Jumlah_permen / (Jumlah_teman + 1);
