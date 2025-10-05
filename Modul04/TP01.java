@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TP01 {
-
+//tes
     public static void main(final String[] args) {
         Scanner scanner = new Scanner(System.in);
         int angka = scanner.nextInt();
