@@ -1,24 +1,31 @@
 import java.util.Scanner;
+
 public class TP02 {
-//tesss
+
     public static void main(final String[] args) {
-         Scanner scanner = new Scanner(System.in);
-        int totalTransaksi = scanner.nextInt();
+        // Kerjakan soalnya di sini
+        Scanner input = new Scanner(System.in);
+        int transaksi = input.nextInt();
 
-        double jumlahDiskon = 0.0;
-        if (totalTransaksi > 200000) {
-            jumlahDiskon = 0.05 * totalTransaksi;
+        if (transaksi > 200000){
+            int diskon = transaksi * 5 / 100;
+            int total =  transaksi - diskon;
+            double ppn = total * 11 / 100;
+            double totalBayar = total + ppn;  
+            System.out.println("Transaksi = " + transaksi);
+            System.out.println("Total = " + transaksi + " - " + diskon);
+            System.out.println("Ppn 11% = " + ppn);
+            System.out.printf("Total dibayar = %.1f", totalBayar);
+        }else{
+            int total = transaksi;
+            double ppn = (total * 0.11);
+            double totalBayar = total + ppn;
+            System.out.println("Transaksi = " + transaksi);
+            System.out.println("Total = " + transaksi);
+            System.out.println("Ppn 11% = " + ppn);
+            System.out.printf("Total dibayar = %.1f", totalBayar);
         }
+        
 
-        double totalSetelahDiskon = totalTransaksi - jumlahDiskon;
-        double pajakPpn = 0.11 * totalSetelahDiskon;
-        double totalPembayaran = totalSetelahDiskon + pajakPpn;
-
-        System.out.println("Transaksi = " + totalTransaksi);
-        System.out.println("Total = " + totalTransaksi + " - " + jumlahDiskon);
-        System.out.println("Ppn 11% = " + pajakPpn);
-        System.out.println("Total dibayar = " + totalPembayaran);
-
-        scanner.close();
     }
 }
