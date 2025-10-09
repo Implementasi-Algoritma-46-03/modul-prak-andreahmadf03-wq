@@ -1,17 +1,16 @@
 import java.util.Scanner;
 
 public class TP01 {
-//tesss
-    public static void main(final String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int angka = scanner.nextInt();
 
-        if (angka % 6 == 0) {
-            System.out.println("Kelipatan Enam");
+    public static void main(final String[] args) {
+        // Kerjakan soalnya di sini
+        Scanner input = new Scanner(System.in);
+        int nilaiBulat = input.nextInt();
+
+        if (nilaiBulat % 6 == 0) {
+            System.out.println("Kelipatan enam");
         } else {
             System.out.println("Bukan kelipatan enam");
         }
-
-        scanner.close();
     }
 }
