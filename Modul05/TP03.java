@@ -21,8 +21,7 @@ public class TP03 {
                 int lebar = in.nextInt();
                 int luasp = panjang * lebar;
                 int kelilingp = 2 * (panjang + lebar);
-                System.out.println(luasp);
-                System.out.println(kelilingp);
+                System.out.println(luasp + kelilingp);
                 break;
             case "segitiga":
                 int alas = in.nextInt();
