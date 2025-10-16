@@ -13,8 +13,7 @@ public class TP03 {
                 int sisi = in.nextInt();
                 int luas = sisi * 3;
                 int keliling = sisi * 4;
-                System.out.println(luas);
-                System.out.println(keliling);
+                System.out.println(luas + " " + keliling);
                 break;
             case "persegi panjang":
                 int panjang = in.nextInt();
