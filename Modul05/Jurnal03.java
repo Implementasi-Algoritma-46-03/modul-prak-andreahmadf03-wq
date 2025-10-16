@@ -1,37 +1,36 @@
 import java.util.Scanner;
 
 public class Jurnal03 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
-        Scanner in = new Scanner(System.in);
-        int angka1 = in.nextInt();
-        char c = in.next().charAt(0);
-        int angka2 = in.nextInt();
-        double total = 0;
+        int A = scanner.nextInt();       // bilangan pertama
+        char O = scanner.next().charAt(0); // tanda operasi
+        int B = scanner.nextInt();       // bilangan kedua
 
-
-        switch (c) {
+     switch (O) {
             case '+':
-                total = angka1 + angka2;
+                System.out.println(A + B);
                 break;
             case '-':
-                total = angka1 - angka2;
+                System.out.println(A - B);
                 break;
             case '*':
-                total = angka1 * angka2;
+                System.out.println(A * B);
                 break;
             case '/':
-                total = angka1 / angka2;
-            default:
+                if (B == 0) {
+                    System.out.println("Error: Division by zero");
+                } else {
+                    double hasil = (double) A / B;
+                    // cetak dengan 7 angka di belakang koma (dibulatkan)
+                    System.out.printf("%.7f%n", hasil);
+                }
                 break;
-        }
-        if (c == '/'){
-            System.out.println(total);
-        }else{
-            System.out.println((int) total);
+            default:
+                System.out.println("Operator tidak valid");
         }
 
-
+        scanner.close();
     }
 }
