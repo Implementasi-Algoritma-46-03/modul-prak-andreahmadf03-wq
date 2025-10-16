@@ -1,40 +1,32 @@
 import java.util.Scanner;
-
 public class Jurnal01 {
-
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
-        Scanner in = new Scanner(System.in);
-        int menu = in.nextInt();
-        int jumlahMakanan = in.nextInt();
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int kodeMenu = input.nextInt();
+        int jumlahMakanan = input.nextInt();
         
-
-        String namaMenu = null;
-        int harga = 0;
-
-        switch (menu) {
+    
+        switch (kodeMenu) {
             case 1:
-                namaMenu = "Nasi Goreng";
-                harga = 15000;
+            int hargaNasiGoreng = (15 * jumlahMakanan);
+            System.out.println("Nasi Goreng " + jumlahMakanan + " buah, total harga Rp. " + hargaNasiGoreng + ".000" );
                 break;
+                
             case 2:
-            namaMenu = "Mie Goreng/Nyemek";
-            harga = 18000; 
+            int hargaMieGoreng = 18 * jumlahMakanan;
+            System.out.println("Mie Goreng / Nyemek " + jumlahMakanan + " buah, total harga Rp. " + hargaMieGoreng + ".000");
                 break;
+
             case 3:
-                namaMenu = "Kwetiau Goreng/Nyemek";
-                harga = 20000;
+            int hargaKwetiauGoreng  = 20 * jumlahMakanan;
+            System.out.println("Kwetiau Goreng / Nyemek " + jumlahMakanan + " buah, total harga Rp. " + hargaKwetiauGoreng + ".000");
                 break;
+
             case 4:
-                namaMenu = "Capcay Goreng/Kuah";
-                harga = 23000;
+            int hargaCapcayGoreng  = 23 * jumlahMakanan;
+            System.out.println("Capcay Goreng / Kuah " + jumlahMakanan + " buah, total harga Rp. " + hargaCapcayGoreng  + ".000");
                 break;
-            default:
-            System.out.println("Menu tidak ada!");
-                return;
         }
-        int total = jumlahMakanan * harga;
-        System.out.println(namaMenu + " " + jumlahMakanan + " buah, total harga Rp. " + total );
 
     }
 }
