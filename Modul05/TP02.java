@@ -13,19 +13,19 @@ public class TP02 {
                 System.out.println("Vendredi");
                 break;
             case 1:
-                System.out.println("Samedi");
+                System.out.println("samedi");
                 break;
             case 2:
-                System.out.println("Dimanche");
+                System.out.println("dimanche");
                 break;
             case 3:
-                System.out.println("Lundi");
+                System.out.println("lundi");
                 break;
             case 4:
                 System.out.println("Mardi");
                 break;
             case 5:
-                System.out.println("Mercredi");
+                System.out.println("mercredi");
                 break;
             case 6:
                 System.out.println("Jeudi");
