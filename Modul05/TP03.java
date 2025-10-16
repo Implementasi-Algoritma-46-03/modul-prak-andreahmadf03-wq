@@ -42,20 +42,18 @@ public class TP03 {
 
                 if (akar != -1){
                     int kelilings = alas + tinggi + akar;
-                    System.out.println(luas1);
-                    System.out.println(kelilings);
+                    System.out.println(luas1 + " " + kelilings);
                 }else{
-                    System.out.println(""); 
+                    System.out.println("");
                 }
+                break;
             case "lingkaran":
                 int diameter = in.nextInt();
                 double jari_jari = diameter / 2;
                 double pi = 3.14;
                 double luasl = pi * (jari_jari * jari_jari);
                 double kelilingl = 2 * pi * jari_jari;
-                System.out.printf("%.2f", luasl );
-                System.out.println();
-                System.out.printf("%.2f", kelilingl);
+                System.out.printf("%.2f", luasl + " " + kelilingl);
         }
 
     }
