@@ -11,7 +11,7 @@ public class TP03 {
         switch (bangunDatar) {
             case "persegi":
                 int sisi = in.nextInt();
-                int luas = sisi * 3;
+                int luas = sisi * sisi;
                 int keliling = sisi * 4;
                 System.out.println(luas + " " + keliling);
                 break;
