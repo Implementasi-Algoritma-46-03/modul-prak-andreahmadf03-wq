@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jurnal01.java {
+public class Jurnal {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

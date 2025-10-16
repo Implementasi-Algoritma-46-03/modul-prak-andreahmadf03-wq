@@ -1,48 +1,21 @@
-//mengimpor scanner (supaya bisa membaca input dari keyboard)
-import java.util.Scanner;
-
-//membuat kelas namanya TP01, harus sesuai sama nama file
 import java.util.Scanner;
 
 public class TP01 {
-    public static void main(String[] args) {
 
-        //membuat objek scanner namanya input
-        Scanner input = new Scanner(System.in);
-
-        //menginput tiga bagian
-        int tabunganAwal = input.nextInt();
-        int tabunganHarian = input.nextInt();
-        int jumlahHari = input.nextInt();
-
-        //total tabungan itu dari tabungan awal ditambah tabungan harian yang dikali jumlah hari.
-        int totalTabungan = tabunganAwal + (tabunganHarian * jumlahHari);
- 
-        //menampilkan hasil akhir tabungan
-        System.out.println(totalTabungan);
-        //nutup scanner
-        input.close();
-    }
-}
-
-/*PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16> cd Modul01
-PS E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> javac TP01.java
-E:\Pasyaaaaaaa\d3if-49-03-Pasya16\Modul01> java TP01
-500000 10000 30
-800000*/
     public static void main(final String[] args) {
         // Kerjakan soalnya di sini
+        Scanner input = new Scanner(System.in);
+        int Nominal_awal;
+        Nominal_awal = input.nextInt();
 
-        Scanner tugas1 = new Scanner(System.in);
+        int Jumlah_tabungan_perhari;
+        Jumlah_tabungan_perhari = input.nextInt();
 
-        int x = tugas1.nextInt();
-        int y = tugas1.nextInt();
-        int n = tugas1.nextInt();
-        
-        int total = x + (y * n);
+        int Lama_menabung;
+        Lama_menabung = input.nextInt();
 
-        System.out.println(total);
-        
-        tugas1.close();
+        int Total_tabungan = Nominal_awal + (Jumlah_tabungan_perhari * Lama_menabung);
+
+        System.out.print(Total_tabungan);
     }
 }
