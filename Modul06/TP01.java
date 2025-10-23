@@ -8,7 +8,7 @@ public class TP01 {
         double in1 = input.nextDouble();
         double in2 = input.nextDouble();
         double in3 = input.nextDouble();
-
+        //tes
         System.out.print("Celcius: ");
         System.out.printf("%.1f %.1f %.1f", selsius(in1), selsius(in2), selsius(in3));
         System.out.print("\nReamur: ");

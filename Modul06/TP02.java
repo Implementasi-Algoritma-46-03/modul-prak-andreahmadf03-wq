@@ -6,7 +6,7 @@ public class TP02 {
 
         String kalimat = input.nextLine();
         input.close();
-
+        //tes
         String hasil = hapusVokal(kalimat);
 
         System.out.println(hasil);

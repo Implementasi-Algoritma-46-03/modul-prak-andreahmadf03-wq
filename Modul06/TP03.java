@@ -4,7 +4,7 @@ public class TP03 {
 
     public static String persegi(int  dataIn) {
         int rumusKeliling, rumusLuas;
-
+        //tes
         rumusLuas = dataIn * dataIn;
         rumusKeliling = 4 * dataIn;
         System.out.println(rumusLuas + " " + rumusKeliling);
