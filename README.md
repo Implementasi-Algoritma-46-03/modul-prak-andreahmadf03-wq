@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: Ahmad Andrei fernandes
 
-NIM : 
+NIM : 607062500021
 
 ## Instruksi
 
