@@ -5,7 +5,7 @@ public class Jurnal01 {
         for (int i = 1; i <= 10; i++) {
             int kuadrat = i * i;
             System.out.print(kuadrat);
-            
+            //tess
             if (i < 10) {
                 System.out.print( " ");
             }

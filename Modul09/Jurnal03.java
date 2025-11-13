@@ -4,7 +4,7 @@ public class Jurnal03 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+        //tess
         int N = input.nextInt(); 
         boolean prima = true;    
 
