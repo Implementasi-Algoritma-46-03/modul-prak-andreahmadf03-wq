@@ -4,7 +4,7 @@ public class TP03 {
         // Kerjakan soalnya di sini
         for(int a=1;a<=100;a++){
             int cek = 0;
-
+            //tess
             if(a>1){
                 for(int b=1;b<=a;b++){
                     if(a%b==0){

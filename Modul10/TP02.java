@@ -5,7 +5,7 @@ public class TP02 {
     public static void main(final String[] args) {
         // Kerjakan soalnya di sini
         Scanner x = new Scanner(System.in);
-
+        //tess
         int n = x.nextInt();
         int k = 0;
 
