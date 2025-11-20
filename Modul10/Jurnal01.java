@@ -8,7 +8,12 @@ public class Jurnal01 {
             }
 
             for (int j = 1; j <= 5; j++) {
-                System.out.print(i + " ");  
+                if (j == 5 && i % 2 == 0) {
+                    System.out.print(i);
+                }
+                else {
+                    System.out.print(i + " ");
+                }
             }
 
             System.out.println(); 
