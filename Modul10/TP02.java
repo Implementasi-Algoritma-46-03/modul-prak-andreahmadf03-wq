@@ -4,21 +4,27 @@ public class TP02 {
 
     public static void main(final String[] args) {
         // Kerjakan soalnya di sini
-        Scanner x = new Scanner(System.in);
-        //tess
-        int n = x.nextInt();
-        int k = 0;
+        Scanner in = new Scanner(System.in);
 
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
-                if(j==i || j==n-i+1){
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
+        int masukan = in.nextInt();
+
+        for (int i = 1; i <= masukan ; i++){
+            for (int j = 1; j < i; j++){
+                System.out.print(" ");
                 }
-            }
-            System.out.println();
+                System.out.println(i);  
         }
+        
+        for (int i = masukan - 1; i < masukan; i--){
+            for (int s = 1; s < i; s++){
+                    System.out.print(" ");
+            }
+            if (i == 0){
+                break;
+            }
+            System.out.println(i);
+        }
+
 
     }
 }
