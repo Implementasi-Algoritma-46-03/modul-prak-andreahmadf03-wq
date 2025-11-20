@@ -1,7 +1,7 @@
 public class Jurnal01 {
     public static void main(String[] args) {
         for (int i = 1; i <= 6; i++) {
-
+            //tes
             //untuk mencari barisan genap
             if (i % 2 == 0) {
                 System.out.print(" "); 

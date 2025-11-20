@@ -5,7 +5,7 @@ public class Jurnal02 {
         Scanner input = new Scanner(System.in);
 
         int N = input.nextInt();  
-
+        //tess
         for (int i = 1; i <= N; i++) {
 
             for (int j = 1; j <= N; j++) {
