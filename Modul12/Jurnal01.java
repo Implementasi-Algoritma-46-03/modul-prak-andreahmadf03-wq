@@ -1,27 +1,28 @@
 import java.util.Scanner;
 
 public class Jurnal01 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
+        int n = input.nextInt();
+        int[][] matriks = new int[n][n];
 
-        int[][] matriks = new int[N][N];
-
-        for (int i=0; i<N; i++) {
-            for (int j=0; j<N; j++) {
-                matriks[i][j] = s.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matriks[i][j] = input.nextInt();
             }
         }
 
-        for (int i=N-1; i>=0; i--) {
-            for (int j=0; j<N; j++) {
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = 0; j < n; j++) {
                 System.out.print(matriks[i][j]);
-                if (j < N -1)
+                if (j < n - 1) {
                     System.out.print(" ");
+                }
             }
-            System.out.println();     
+            System.out.println();
         }
+        
+        input.close();
     }
 }

@@ -1,46 +1,54 @@
 import java.util.Scanner;
 
 public class Jurnal03 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
+        int n = input.nextInt();
+        int[][] matriks = new int[n][n];
 
-        int mulai = 0;
-        int counter = 0;
-        int akhir = N;
-        int loop = 0;
-        
-        int[][] matriks = new int[N][N]; // membuat aray 2 dimensi ukuran kolom dan baris
+        int nilaiSaatIni = 1;
+        int batasAtas = 0;
+        int batasBawah = n - 1;
+        int batasKiri = 0;
+        int batasKanan = n - 1;
 
-        while (akhir > 0) {
-            for (int i = mulai; i<akhir; i++) {
-                counter++;
-                matriks[i + loop][mulai+loop] = counter; // kolom paling kiri ke bawah
+        while (nilaiSaatIni <= n * n) {
+            for (int i = batasAtas; i <= batasBawah; i++) {
+                if (nilaiSaatIni > n * n) break;
+                matriks[i][batasKiri] = nilaiSaatIni++;
             }
-            akhir--;
-            for (int i= mulai; i<akhir; i++) {
-                counter++;
-                matriks[akhir + loop][i+ 1+ loop] = counter; // paling bawah kiri ke kanan
+            batasKiri++;
+
+            for (int i = batasKiri; i <= batasKanan; i++) {
+                if (nilaiSaatIni > n * n) break;
+                matriks[batasBawah][i] = nilaiSaatIni++;
             }
-            for (int i = mulai; i<akhir; i++) {
-                counter++;
-                matriks[akhir - i - 1 + loop][akhir + loop] = counter; // kolom kanan dari bawah ke atas
+            batasBawah--;
+
+            for (int i = batasBawah; i >= batasAtas; i--) {
+                if (nilaiSaatIni > n * n) break;
+                matriks[i][batasKanan] = nilaiSaatIni++;
             }
-            akhir--;
-            for (int i = mulai; i<akhir; i++) {
-                counter++;
-                matriks[mulai+loop][akhir - i + loop] = counter; //bari atas dari kanan ke kiri
+            batasKanan--;
+
+            for (int i = batasKanan; i >= batasKiri; i--) {
+                if (nilaiSaatIni > n * n) break;
+                matriks[batasAtas][i] = nilaiSaatIni++;
             }
-            loop++;
-        }        
-        for (int i=0; i<N; i++) {
-            for (int j=0; j<N; j++) {
+            batasAtas++;
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print(matriks[i][j]);
-                if (j < N - 1)
+                if (j < n - 1) {
                     System.out.print(" ");
+                }
             }
             System.out.println();
         }
+        
+        input.close();
     }
 }
